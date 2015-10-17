@@ -1,0 +1,89 @@
+.mw-header {
+    border-top: 1px solid #000000;
+    height: 75px;
+
+    #Header {
+	  background: $color1;
+	  a {
+	    color: $color2;
+	  }
+	}
+	.test-mw {
+		background: $red_error;
+	}
+	.mw_search {
+	    overflow: hidden; /* clear the float */
+	}
+	#SearchForm {
+		width: 92%;
+	}
+	
+	#SearchForm form  {
+		position: relative;
+	}
+
+	#search_query {
+		width: 95%;
+
+	}
+
+	.mw_logo_child {
+	  display: inline-block;
+	  width: 50%;
+	  margin: 1em;
+	  vertical-align: top;
+	}
+
+	.mw_search_btn {
+		position: absolute;
+	    top: -1px;
+	    right: 0;
+	    background: #480A02;	
+	    height: 100%;
+	    width: 5%;
+	}
+
+	.mw-inline-container {
+	    overflow: hidden; /* clear the float */
+	}
+	.mw-inline-container-logo {
+	    width:100%;
+	    height: 100%;
+	    overflow: hidden; /* clear the float */
+	}
+
+	.mw-inline-container div {
+	    height: 70px;
+	} 
+	.inline_left {
+	    width: 60%;
+	    float: left;
+	    border-right: 0px solid #000;
+	}
+	.inline_right {
+		float: right;
+	    overflow: hidden;
+	}
+
+	.inline_left {
+	    width: 60%;
+	    float: left;
+	    border-right: 0px solid #000;
+	}
+	.mw-logo-color {
+	 	color: $white;
+	}
+
+	.mw-header .mw-header-search-form .mw-open-menu {
+	    float: right;
+	    position: relative;
+	    width: 58px;
+	    height: 31px;
+	    background: #4B0A05;
+	    border: 1px solid #000000;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+
+
+}

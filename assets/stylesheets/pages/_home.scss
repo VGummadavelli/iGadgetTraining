@@ -1,0 +1,27 @@
+// Every page should have a class on the body
+// Scope that in each file at the start
+.mw-home {
+	.mw-change-display-to-inline-block {
+		display: inline-block;
+	}
+
+	.remove_ul_style{
+		list-style-type: none;
+	}
+	.mw-inline-container {
+	    overflow: hidden; /* clear the float */
+	}
+
+	.mw-inline-container div {
+	    height: 70px;
+	} 
+	.mw-inline-left-cart {
+		width: 50%;
+	    float: left;
+	    border-right: 0px solid #000;
+	}
+	
+	
+  
+}
+ 
