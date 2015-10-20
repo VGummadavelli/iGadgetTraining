@@ -3,7 +3,11 @@ $("./body"){
 	add_class("mw-header")
 
 	$(".//div[@id='Header']"){
+
+		add_class("mw-fixed-height")
 		
+		attribute("data-ur-set", "toggler")
+
 		$("./div[@id='Logo']"){	
 
 		    //add_class('test-mw')
@@ -38,28 +42,48 @@ $("./body"){
 				remove("./p")
 				
 				 $("./form") {
-					add_class('inline_left')
+					# add_class('inline_left')
 
 				 	remove("./label")
+
 				 	# Change search button background image
 			      
 				    $("./input[@type='text']") {
+				      wrap("div", class: "mw-text-container")
+				      add_class("mw-search-input")
 				      attribute("placeholder", "Search...")
+				      	
 				    }
 
 			        $("./input[@type='image']") {
 			        	
-			          add_class('mw_search_btn')
+			          wrap("div", class: "mw-search-btn")
+			          attribute("style", "opacity:0;")
+
 			          //change this	
 			          //insert("i", class: "sprites-cart")
-				
+						
+						add_class('mw-search-img')
+			          	
+						attribute('src', "")
+						attribute('class', "")
+						attribute('id', "SearchBtn")
+						attribute('width','34px')
+						attribute('height','34px')
+						attribute('border','0px')
+						attribute('title','')						
 			        }
+
+			        $("./div[@class='mw-search-btn']"){
+			        	insert("i", class:"sprites-search")
+					}
+
+					$("./div[@class='mw-search-btn']/i"){
+						wrap("div", class: 'mw-search-icon')
+						add_class("mw-inline-block")
+					}
 			     }
 
-			    insert("i", class: "sprites-menu") {
-			    	add_class('inline_right')
-			     	add_class('mw-change-display-to-inline-block')
-				}
 
 			}
 
@@ -67,6 +91,11 @@ $("./body"){
 				
 
 
+			}
+
+			insert("i", class: "sprites-menu") {
+		    	# add_class('inline_right')
+		     	add_class('mw-float-right-block')
 			}
 
 		}

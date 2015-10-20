@@ -33,13 +33,12 @@
 	  vertical-align: top;
 	}
 
-	.mw_search_btn {
+	.mw-search-btn {
 		position: absolute;
-	    top: -1px;
-	    right: 0;
+	    top: 0;
+	    right: -10px;
 	    background: #480A02;	
-	    height: 100%;
-	    width: 5%;
+	    height: 35px;
 	}
 
 	.mw-inline-container {
@@ -54,11 +53,6 @@
 	.mw-inline-container div {
 	    height: 70px;
 	} 
-	.inline_left {
-	    width: 60%;
-	    float: left;
-	    border-right: 0px solid #000;
-	}
 	.inline_right {
 		float: right;
 	    overflow: hidden;
@@ -73,6 +67,31 @@
 	 	color: $white;
 	}
 
+	.mw-search-img {
+	    border: 0 !important;
+	    border-radius: 0;
+	    text-indent: -999px;
+	    height: 40px;
+	    width: 40px;
+	}
+
+	.mw-text-container {
+		display: block;
+	}
+
+	.mw-search-icon {
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translateY(-50%) translateX(-50%);
+	}
+
+	.mw-search-input[type='text'] {
+	    border: 0;
+	    border-radius: 0;
+	    border-right: 1px solid #000000;
+	}
+
 	.mw-header .mw-header-search-form .mw-open-menu {
 	    float: right;
 	    position: relative;
@@ -82,6 +101,43 @@
 	    border: 1px solid #000000;
 	    border-radius: 4px;
 	    cursor: pointer;
+	}
+	.mw-inline-block {
+		display: inline-block;
+	}
+	.sprites-search {
+		width: 35px;
+    	height: 35px;
+	}
+
+	.mw-fixed-height {
+		height: 125px;
+	}
+
+	.mw_header_bottom {
+		width: 100%;
+	    display: block;
+	    @include background(linear-gradient(top, #852201, #6a1b00));
+
+	    .mw_search {
+
+	    	display: block;
+    		width: 100%;
+          
+	    }
+	    
+	    #SearchForm {
+	    	display: inline-block;
+	    	width: 85%;
+	    	position: relative;
+	    }
+
+	    .mw-float-right-block {
+	    	float: right;
+	    	display: block;
+
+	    }
+
 	}
 
 

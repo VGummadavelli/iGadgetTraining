@@ -1,3 +1,22 @@
 .mw-footer {
+    float: left;
+    width: 100%;
+    background: linear-gradient(#521001, #521200) left repeat;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    color: #B49F9F;
+    font-size: 11px;
+    text-align: center;
 
+    .mw-footer-inline-block {
+    	display: inline-block;
+    }
+
+    footer {
+    	height: 45px;
+    }
+
+    .sprites-moovweb {
+    	width: 95px;
+    	height: 13px;
+    }
 }

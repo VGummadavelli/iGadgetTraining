@@ -10,13 +10,13 @@ $("/html") {
   remove_internal_styles()
 
   # Rewrite relative image paths to point to original desktop site.
-//absolutize_srcs()
-# Add the mobile meta tags 
-clean_mobile_meta_tags()
+  # absolutize_srcs()
+  # Add the mobile meta tags 
+  clean_mobile_meta_tags()
    
-# Remove styles and comments
-remove_all_styles()
-remove_html_comments()
+  # Remove styles and comments
+  remove_all_styles()
+  remove_html_comments()
 
   add_assets()
 

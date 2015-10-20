@@ -15,6 +15,9 @@ match($status) {
     with(/^home$/) {
       @import pages/home.ts
     }
+    with("shop") {
+      @import "pages/categories.ts"
+    }
     else() {
     }
   }
